@@ -7,3 +7,4 @@ def solution(n):
 
 # 디버깅하는 곳입니다.
 print(solution(12345))
+print(solution(54321))
