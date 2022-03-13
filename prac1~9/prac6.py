@@ -1,3 +1,6 @@
+# 6. 콜라츠 추측
+# https://programmers.co.kr/learn/courses/30/lessons/12943
+
 def solution(n):
     answer = 0
 
