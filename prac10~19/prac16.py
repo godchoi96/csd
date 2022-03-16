@@ -11,3 +11,4 @@ def solution(a, b):
 # 디버깅하는 곳입니다.
 print(solution([1,2,3,4], [-3,-1,0,2]))
 print(solution([-1,0,1], [1,0,-1]))
+print(solution([1, 1], [-1, -1]))
