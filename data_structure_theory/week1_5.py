@@ -17,3 +17,24 @@ print(find_not_repeating_first_character("abadabac"))
 print(find_not_repeating_first_character("aabbcddd"))
 print(find_not_repeating_first_character("aaaaaaaa"))
 print(find_not_repeating_first_character("aab  bcddd"))
+
+# 7. 소수 나열하기
+def find_prime_list_under_number(number):
+    temp = []
+    answer = []
+
+    for i in range(number + 1):
+        temp.append(0)
+
+    for index in range(2, number + 1):
+        if temp[index] == 0:
+            for remove_index in range(2 * index, number + 1, index):
+                temp[remove_index] = 1
+
+    for temp_index in range(2, number + 1):
+        if temp[temp_index] == 0:
+            answer.append(temp_index)
+
+    return answer
+
+print(find_prime_list_under_number(20))
