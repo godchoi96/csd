@@ -7,10 +7,10 @@ def solution(arr):
     for i in range(len(arr) - 1):
         if i == 0:
             if arr[i] != arr[i + 1]:
-                answer.append(arr[0])
+                answer.append(arr[i])
                 answer.append(arr[i + 1])
             else:
-                answer.append(arr[0])
+                answer.append(arr[i])
         else:
             if arr[i] != arr[i + 1]:
                 answer.append(arr[i + 1])
