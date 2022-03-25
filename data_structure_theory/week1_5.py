@@ -38,3 +38,10 @@ def find_prime_list_under_number(number):
     return answer
 
 print(find_prime_list_under_number(20))
+
+# 8. 문자열 뒤집기
+def find_count_to_turn_out_to_all_zero_or_all_one(string):
+    string = string.replace('1', '0')
+    return string
+ 
+print(find_count_to_turn_out_to_all_zero_or_all_one("011110"))
