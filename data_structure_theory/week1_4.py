@@ -1,7 +1,4 @@
 # 4. 점근표기법 알아보기
-from re import I
-
-
 def is_number_exist(number, array):
     
     for i in array:
