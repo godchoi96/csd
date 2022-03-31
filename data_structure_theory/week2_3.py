@@ -1,10 +1,8 @@
 # 3. 링크드 리스트 구현하기 - 2
-
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
-
 
 class LinkedList:
     def __init__(self, value):
