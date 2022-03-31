@@ -51,6 +51,6 @@ class LinkedList:
 linked_list = LinkedList(5)
 linked_list.append(12)
 linked_list.append(8)
-linked_list.add_node(1, 6)
+linked_list.add_node(0, 6)
 linked_list.delete_node(0)
 linked_list.print_all()
