@@ -1,4 +1,4 @@
-# 22. 별 찍기 - 4
+# 23. 별 찍기 - 4
 # https://www.acmicpc.net/problem/2441
 
 num = int(input())
