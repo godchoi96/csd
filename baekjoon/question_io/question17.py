@@ -1,5 +1,5 @@
 # 17. 2007년
-# https://www.acmicpc.net/problem/2739
+# https://www.acmicpc.net/problem/1924
 
 day_array = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
 date_array = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
