@@ -1,4 +1,4 @@
-# 5. 이진 탐색 - 1
+# 5. 이진 탐색 
 def is_existing_target_number_binary(target, array):
     half_array = len(array) // 2 
     if target > half_array:
