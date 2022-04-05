@@ -1,6 +1,7 @@
 # 4. 링크드 리스트 문제 - 두 링크드 리스트의 합 계산
 class Node:
-    def __init__(self, data):
+    # 노드 생성
+    def __init__(self, data): 
         self.data = data
         self.next = None
 
@@ -14,20 +15,19 @@ class LinkedList:
             cur = cur.next
         cur.next = Node(value)
 
-    def get_linked_list_sum(linked_list_1, linked_list_2):
-        sum_1 = _get_linked_list_sum(linked_list_1)
-        sum_2 = _get_linked_list_sum(linked_list_2)
+def get_linked_list_sum(linked_list_1, linked_list_2):
+    sum_1 = _get_linked_list_sum(linked_list_1)
+    sum_2 = _get_linked_list_sum(linked_list_2)
 
-        return sum_1 + sum_2
+    return sum_1 + sum_2
 
-
-    def _get_linked_list_sum(linked_list):
-        sum = 0
-        head = linked_list.head
-        while head is not None:
-            sum = sum * 10 + head.data
-            head = head.next
-        return sum
+def _get_linked_list_sum(linked_list):
+    sum_num = 0
+    head = linked_list.head
+    while head is not None:
+        sum_num = sum_num * 10 + head.data
+        head = head.next
+    return sum_num
         
 linked_list_1 = LinkedList(6)
 linked_list_1.append(7)
