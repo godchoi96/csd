@@ -33,3 +33,13 @@ linked_list.append(7)
 linked_list.append(8)
 
 print(linked_list.get_kth_node_from_last(2).data) 
+
+# 11. 배달의 민족 배달 가능 여부
+# orders = 내가 주문한 것 / menus = 주문 메뉴
+def solution(orders, menus):
+    for order in orders:
+        if order not in menus:
+            return False
+    return True
+print(solution(["오뎅", "콜라", "만두"], ["만두", "떡볶이", "오뎅", "사이다", "콜라"]))
+print(solution(["오뎅", "콜라", "만두", "햄버거"], ["만두", "떡볶이", "오뎅", "사이다", "콜라"]))
