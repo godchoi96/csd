@@ -56,3 +56,24 @@ def factorial(n):
     return n * factorial(n - 1)
 
 print(factorial(5))
+
+# 7. 피보나치 수열
+def fibonacci(n):
+    if n < 3:
+        return 1
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+print(fibonacci(5))
+
+# 8. 2진수 변환
+binary_result = []
+def binary_change(n):
+    global binary_result
+    if n == 0:
+        if binary_result == []:
+            binary_result.append(0)
+        return ''.join(map(str, binary_result[::-1]))
+    binary_result.append(n % 2)
+    return binary_change(n // 2)
+
+print(binary_change(5))
