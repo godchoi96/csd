@@ -1,4 +1,4 @@
-# 44. 주사위 세계
+# 44. 주사위 세개
 # https://www.acmicpc.net/problem/2480
 
 num1, num2, num3 = map(int, input().split())
