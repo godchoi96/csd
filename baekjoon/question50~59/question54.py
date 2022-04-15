@@ -1,10 +1,18 @@
-# 54. 정수 N개의 합
-# https://www.acmicpc.net/problem/15596
+# 54. 셀프 넘버
+# https://www.acmicpc.net/problem/4673
 
-def solve(a):
-    ans = 0
-    for num in a:
-        ans += num
-    return ans
+full_list = set(range(1, 10001))
+list = []
 
-print(solve([1, 2, 3, 4, 5]))
+def non_make_self_number(num):
+    for n in str(num):
+        num += int(n)
+    return num
+
+for i in range(1, 10000):
+    list.append(non_make_self_number(i))
+
+list = set(list)
+
+for number in sorted(full_list - list):
+    print(number)

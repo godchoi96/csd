@@ -1,18 +1,25 @@
-# 55. 셀프 넘버
-# https://www.acmicpc.net/problem/4673
+# 55. 한수
+# https://www.acmicpc.net/problem/1065
 
-full_list = set(range(1, 10001))
-list = []
+# 1 ~ 9 > 1 한 자릿수는 기본적으로 1
+# 10 ~ 99 > 99 > 두 자릿수는 모두가 등차수열
+# 100 > 1 0 1 이기 때문에 등차수열이 아님
 
-def non_make_self_number(num):
-    for n in str(num):
-        num += int(n)
-    return num
+answer = []
 
-for i in range(1, 10000):
-    list.append(non_make_self_number(i))
+def arithmetic(num):
+    global answer
 
-list = set(list)
+    if num < 100:
+        answer.append(num)
+    else:
+        num = str(num)
+        if int(num[0]) - int(num[1]) == int(num[1]) - int(num[2]):
+            answer.append(int(num))
+            
+    return answer
 
-for number in sorted(full_list - list):
-    print(number)
+input_num = int(input())
+for i in range(1, input_num + 1):
+    arithmetic(i)
+print(len(answer))
