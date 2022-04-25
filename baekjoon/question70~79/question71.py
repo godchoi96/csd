@@ -37,3 +37,9 @@
 
 # 3, 3
 # 2: 1, 2, 3 > 1: 1, 1, 2, 1, 2, 3 > 0: 1, 1, 1, 2, 1, 1, 2, 1, 2, 3
+
+num = int(input())
+
+for i in range(num):
+    t, k = map(int, input().split())
+    
