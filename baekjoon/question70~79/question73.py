@@ -7,15 +7,10 @@
 # 4 = 1, 2, 4 ... 2로 나눠지기 때문에 소수가 아님 
 
 N = int(input())
-input_list = []
+input_list = list(map(int, input().split()))
 answer_list = []
 
-for i in range(N):
-    input_list.append(int(input()))
-
 for num in input_list:
-    if num == 1:
-        answer_list.append(num)
     for cnt in range(2, num + 1):
         if num % cnt == 0:
             if num // cnt == 1:
