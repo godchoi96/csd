@@ -29,4 +29,4 @@ def insertion_sort(array):
             print(array)
     return array
 
-print(selection_sort([4, 6, 2, 9, 1]))
+print(selection_sort([4, 6, 2, 9, 1])) 
