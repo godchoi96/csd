@@ -85,3 +85,53 @@ def insertion_sort(array):
     return array
 
 print(insertion_sort([3, 6, 2, 7, 1]))
+
+# 4. 병합 정렬
+# [1, 2, 3, 5]와 [4, 6, 7, 8]을 다음과 같이 정렬한다. 참고로 이 리스트는 정렬되어 있는 상태다.
+# [1, 4] 비교 -> 새로운 리스트에 [1] 추가 : 현재 새로운 리스트는 [1]
+# [2, 4] 비교 -> 새로운 리스트에 [2] 추가 : 현재 새로운 리스트는 [1, 2]
+# [3, 4] 비교 -> 새로운 리스트에 [3] 추가 : 현재 새로운 리스트는 [1, 2, 3]
+# [5, 4] 비교 -> 새로운 리스트에 [4] 추가 : 현재 새로운 리스트는 [1, 2, 3, 4]
+# [5, 6] 비교 -> 새로운 리스트에 [5] 추가 : 현재 새로운 리스트는 [1, 2, 3, 4, 5]
+# 더 이상 첫번째 리스트에 값이 없기 때문에 남은 [6, 7, 8]을 새로운 리스트에 추가 : [1, 2, 3, 4, 5, 6, 7, 8]
+
+def merge(array1, array2):
+    result = []
+    array1_index = 0
+    array2_index = 0
+
+    while array1_index < len(array1) and array2_index < len(array2):
+        if array1[array1_index] < array2[array2_index]:
+            result.append(array1[array1_index])
+            array1_index += 1
+        else:
+            result.append(array2[array2_index])
+            array2_index += 1
+    
+    if array1_index == len(array1):
+        while array2_index < len(array2):
+            result.append(array2[array2_index])
+            array2_index += 1
+    if array2_index ==len(array2):
+        while array1_index < len(array1):
+            result.append(array1[array1_index])
+            array1_index += 1
+
+    return result
+
+# 위에서는 정렬된 배열을 단지 합쳐주는 역할의 함수이다. 실제 리스트는 저렇게 정렬되어 있지 않다.
+# [5, 3, 2, 1, 6, 8, 7, 4]를 다음과 같이 정렬한다.
+# [5, 3, 2, 1], [6, 8, 7, 4]
+# [5, 3], [2, 1], [6, 8], [7, 4]
+# [5], [3], [2], [1], [6], [8], [7], [4]
+# 재귀를 사용해서 분할을 해주고 다시 위의 merge 함수를 실행시킨다면 분할을 하고 정렬을 해서 병합을 하는 병합 정렬이 완성된다.
+
+def merge_sort(array):
+    if len(array) <= 1:
+        return array
+    mid_num = (0 + len(array)) // 2
+    left_array = merge_sort(array[:mid_num])
+    right_array = merge_sort(array[mid_num:])
+    return merge(left_array, right_array)
+
+print(merge_sort([5, 3, 2, 1, 6, 8, 7, 4]))
