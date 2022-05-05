@@ -49,3 +49,31 @@ class LinkedDict:
     def get(self, key):
         index = hash(key) % len(self.items)
         return self.items[index].get(key)
+
+# 출석 체크
+def solution(all_array, present_array):
+    answer = []
+    for student in all_array:
+        if student not in present_array:
+            answer.append(student)
+    return answer
+
+all_students = ["나연", "정연", "모모", "사나", "지효", "미나", "다현", "채영", "쯔위"]
+present_students = ["정연", "모모", "채영", "쯔위", "사나", "나연", "미나", "다현"]
+print(solution(all_students, present_students))
+
+def get_absent_student(all_array, present_array):
+    answer = {}
+    for student in all_array:
+        answer[student] = True
+        # 모든 학생을 answer라는 딕셔너리에 key로 넣고 value는 모두 True로 지정한다.
+
+    for student in present_array:
+        del answer[student]
+        # 현재 있는 학생의 key를 answer에서 지운다.
+
+    for student in answer.keys():
+        return student
+        # answer의 모든 key를 리턴한다.
+
+print(get_absent_student(all_students, present_students))
