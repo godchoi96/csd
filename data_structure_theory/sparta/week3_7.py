@@ -1,19 +1,19 @@
 # 문제 풀어보기
 # 1. 쓱 최대로 할인 적용하기
+def selection_sort(array):
+    for i in range(len(array)):
+        min_index = i
+        for j in range(len(array) - i):
+            if array[min_index] > array[i + j]:
+                array[min_index], array[i + j] = array[i + j], array[min_index]
+    
+    return array
+
 def apply_discounted(price_list, coupon_list):
     answer_price = 0
 
-    for i in range(len(price_list)):
-        min_index = i
-        for j in range(len(price_list) - i):
-            if price_list[min_index] > price_list[i + j]:
-                price_list[min_index], price_list[i + j] = price_list[i + j], price_list[min_index]
-    
-    for i in range(len(coupon_list)):
-        min_index = i
-        for j in range(len(coupon_list) - i):
-            if coupon_list[min_index] > coupon_list[i + j]:
-                coupon_list[min_index], coupon_list[i + j] = coupon_list[i + j], coupon_list[min_index]
+    price_list = selection_sort(price_list)
+    coupon_list = selection_sort(coupon_list)
 
     while price_list != []:
         if coupon_list != []:
