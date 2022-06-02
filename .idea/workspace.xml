@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="00514d2c-a29c-4c18-8a52-de0ca9bf945e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/vue/booktodo_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/booktodo_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29CqEWUmzhpeLJ8RZxmZbDeQGQW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/82107/Desktop/todoPrac",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Python"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\82107\Desktop\Algo_Prac\vue" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00514d2c-a29c-4c18-8a52-de0ca9bf945e" name="Changes" comment="" />
+      <created>1652627303417</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652627303417</updated>
+      <workItem from="1652627304721" duration="984000" />
+      <workItem from="1652628331460" duration="1648000" />
+      <workItem from="1652630162422" duration="18000" />
+      <workItem from="1652837773722" duration="7461000" />
+      <workItem from="1652892161051" duration="1858000" />
+      <workItem from="1652934362149" duration="2465000" />
+      <workItem from="1652960956433" duration="6889000" />
+      <workItem from="1653036949427" duration="12000" />
+      <workItem from="1653207064900" duration="1141000" />
+      <workItem from="1653253719307" duration="125000" />
+      <workItem from="1653256565985" duration="1769000" />
+      <workItem from="1653609112257" duration="14148000" />
+      <workItem from="1653655755849" duration="1397000" />
+      <workItem from="1653785291522" duration="632000" />
+      <workItem from="1653786716897" duration="8000" />
+      <workItem from="1653932717125" duration="165000" />
+      <workItem from="1653981484468" duration="26000" />
+      <workItem from="1653981527545" duration="162000" />
+      <workItem from="1653981706675" duration="283000" />
+      <workItem from="1653982207658" duration="2000" />
+      <workItem from="1654013681689" duration="20000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
