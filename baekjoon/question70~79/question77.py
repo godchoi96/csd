@@ -73,3 +73,4 @@ for i in range(len(boolean_index_list)):
             answer.append([boolean_index_list[i], boolean_index_list[j]])
 
 print(answer[-1][0], answer[-1][1])
+
