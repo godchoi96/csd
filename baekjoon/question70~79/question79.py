@@ -1,5 +1,5 @@
 # 79. 팩토리얼
-# hhttps://www.acmicpc.net/problem/10872
+# https://www.acmicpc.net/problem/10872
 
 num = int(input())
 
