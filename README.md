@@ -1,9 +1,16 @@
-# ⭕ Algorithm
-## 2022.03.13 ~ 
+# ⭕ CSD
+#### 2022.03.13 ~ 
 
-✅ 뇌를 말랑말랑하게 해주는 알고리즘 기초 문제풀이
+## ✅ Programming Language / Algorithms / Data Structure
+1. 프로그래밍 언어에 대해 공부한다.
+2. 알고리즘 문제(백준, 프로그래머스, 구름레벨)을 풀며 문제 해결능력을 키운다.
+3. 자료구조에 대해 정리한다.
 
-🆗 디렉토리
+## 🛠 Programming Language
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
+
+
+## 🆗 Directory
 1. baekjoon\question1-26 - 백준 기초 문제 1-26
 2. baekjoon\question27- - 백준 단계별로 풀어보기
 3. programmers\level1 - 프로그래머스 1단계 
@@ -16,4 +23,4 @@
 10. python\repeat - 스스로 정리하는 python 객체
 11. python\upgrade - 파이썬 심화과정
 
--- Last Update : 2022.06.06
+-- Last Update : 2022.06.19
