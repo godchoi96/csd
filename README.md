@@ -23,4 +23,4 @@
 10. python\repeat - 스스로 정리하는 python 객체
 11. python\upgrade - 파이썬 심화과정
 
--- Last Update : 2022.06.06
+-- Last Update : 2022.06.19
