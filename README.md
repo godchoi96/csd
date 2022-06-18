@@ -10,7 +10,7 @@
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
 
 
-## 🆗 디렉토리
+## 🆗 Directory
 1. baekjoon\question1-26 - 백준 기초 문제 1-26
 2. baekjoon\question27- - 백준 단계별로 풀어보기
 3. programmers\level1 - 프로그래머스 1단계 
