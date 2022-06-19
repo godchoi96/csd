@@ -2,8 +2,8 @@ import java.util.HashMap;
 public class MapCase {
     public static void main(String[] args) {
         HashMap<String, String> map_string = new HashMap<>();
-        map_string.put("csd", "최승대");
-        map_string.put("lde", "이동은");
+        map_string.put("csd", "ChoiSeongdae");
+        map_string.put("lde", "LeeDongeun");
 
         MapCase mapcase = new MapCase();
         mapcase.print_map(map_string);
