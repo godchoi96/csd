@@ -4,7 +4,7 @@ public class TypeTransFinalCase {
         int n = 123;
         final int none_change = 456;
 
-        none_change = 456; // 실행 시, 이 부분 제거 필요.
+        // none_change = 456; // 실행 시, 이 부분 제거 필요.
         System.out.println(none_change);
         TypeTransFinalCase typeTrans = new TypeTransFinalCase();
         typeTrans.print_inttrans(num);
