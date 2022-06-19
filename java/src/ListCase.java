@@ -7,7 +7,7 @@ public class ListCase {
         randomNumber.add("456");
         randomNumber.add("789");
 
-        ArrayList arrayList = new ArrayList();
+        ListCase arrayList = new ListCase();
         arrayList.print_list(randomNumber);
     }
     public void print_list(ArrayList n) {
