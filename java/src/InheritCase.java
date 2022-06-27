@@ -31,3 +31,4 @@ public class InheritCase {
         jsp.coding("Java");
     }
 }
+
