@@ -1,3 +1,7 @@
+interface FrameworkLanguage {
+    void thisframework();
+}
+
 interface Language {
     String getCode();
 }
@@ -10,15 +14,21 @@ class Programming {
     }
 }
 
-class Java extends Programming implements Language {
+class Java extends Programming implements Language, FrameworkLanguage {
     public String getCode() {
         return "Java";
     }
+    public void thisframework() {
+        System.out.println("JSP ver2.");
+    }
 }
 
-class Python extends Programming implements Language {
+class Python extends Programming implements Language, FrameworkLanguage {
     public String getCode() {
         return "Python";
+    }
+    public void thisframework() {
+        System.out.println("Django ver2.");
     }
 }
 
@@ -28,12 +38,19 @@ class Coder {
     }
 }
 
+class Framework {
+    void thisFramework(FrameworkLanguage programming) {
+        programming.thisframework();
+    }
+}
+
 public class InterfaceCase {
     public static void main(String[] args) {
-        Coder coder = new Coder();
         Java java = new Java();
         Python python = new Python();
-        coder.coding(java);
-        coder.coding(python);
+
+        Framework framework = new Framework();
+        framework.thisFramework(java);
+        framework.thisFramework(python);
     }
 }
